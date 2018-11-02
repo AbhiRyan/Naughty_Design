@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;/*normally not inherited, forces to inherit from body*/
+}
+
+/* Set root font size for rem*/
+html {
+    font-size: 62.5%;/*base on 16px font, basis of using rem instead of px*/
+    font-family: $FontFam-Lato;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: $col-primary-medium;
+    //background-color: $col-primary-light;
+}
+
+::selection {
+    background-color: rgba($col-black,.3);
+    color: $col-secondary-light;
+}
